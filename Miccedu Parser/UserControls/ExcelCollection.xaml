@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="miccedux.UserControls.ExcelCollection"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:miccedux.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="530">
+
+
+    <Grid>
+        <Rectangle Fill="#333"/>
+        <StackPanel VerticalAlignment="Center">
+        <TextBlock x:Name="status_block" VerticalAlignment="Center">Выполняется загрузка...</TextBlock>
+            <ProgressBar x:Name="Progress_Bar" Margin="25" Maximum="100"   />
+        </StackPanel>
+        
+        
+        <Button Content="Вернуться" Width="100" Height="40" VerticalAlignment="Bottom" Margin="20" FontSize="14" Click="Button_Click"/>
+        <Grid.Resources>
+            <Style TargetType="TextBlock">
+                <Setter Property="FontSize" Value="42"/>
+                <Setter Property="FontFamily" Value="./#Quirlycues"/>
+                <Setter Property="Foreground" Value="{StaticResource ControlBackgroundOver}"/>
+                <Setter Property="Margin" Value="10,10,10,6"/>
+                <Setter Property="HorizontalAlignment" Value="Center"/>
+                <Setter Property="TextWrapping" Value="Wrap"/>
+            </Style>
+        </Grid.Resources>
+    </Grid>
+</UserControl>

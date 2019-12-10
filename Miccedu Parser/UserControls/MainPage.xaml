@@ -1,0 +1,54 @@
+﻿<UserControl x:Class="miccedux.MainPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:miccedux"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" Background="#333" Loaded="UserControl_Loaded">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="10*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="27*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Мониторинг" Foreground="White" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10,16" Height="16" FontSize="14"/>
+        <ComboBox x:Name="Combo_Monitorings" MaxHeight="30" Grid.Row ="0" Grid.Column="1"
+                  Margin="25,10,1,10" IsEditable="True" ItemsSource="{Binding Cells}" SelectedIndex="{Binding SelectedIndex}"
+                  DisplayMemberPath="title" Text="{Binding NewItem, UpdateSourceTrigger=LostFocus}"
+                  MaxDropDownHeight="{Binding height, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" FontSize="14" DropDownClosed="ComboBox_DropDownClosed" KeyDown="ComboBox_KeyDown" GotFocus="ComboBox_GotFocus" Loaded="ComboBox_Loaded" >
+            
+        </ComboBox>
+
+        <TextBlock Text="Год" Grid.Row="1" Foreground="White" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10,16" Height="16" FontSize="14"/>
+        <ComboBox x:Name="Combo_Years" MaxHeight="30" IsEditable="True"
+                  ItemsSource="{Binding Cells}" SelectedIndex="{Binding SelectedIndex}"
+                  DisplayMemberPath="title" Text="{Binding NewItem, UpdateSourceTrigger=LostFocus}"
+                  MaxDropDownHeight="{Binding height, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"
+                  Grid.Row ="1" Grid.Column="1" IsEnabled="False" Margin="25,10,1,10" FontSize="14" DropDownClosed="ComboBox_DropDownClosed" KeyDown="ComboBox_KeyDown" GotFocus="ComboBox_GotFocus" Loaded="ComboBox_Loaded"/>
+
+        <TextBlock Text="Регионы" Grid.Row="2" Foreground="White" Grid.Column="0" TextWrapping="Wrap" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10,16,10,15" Height="16" FontSize="14"/>
+        <ComboBox x:Name="Combo_Regions" IsEditable="True"
+                  ItemsSource="{Binding Cells}" SelectedIndex="{Binding SelectedIndex}"
+                  DisplayMemberPath="title" Text="{Binding NewItem, UpdateSourceTrigger=LostFocus}"
+                  MaxDropDownHeight="{Binding height, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"
+                  MaxHeight="30" Grid.Row ="2" Grid.Column="1" IsEnabled="False" Margin="25,10,1,10" FontSize="14" DropDownClosed="ComboBox_DropDownClosed" KeyDown="ComboBox_KeyDown" GotFocus="ComboBox_GotFocus" Loaded="ComboBox_Loaded"/>
+
+        <TextBlock x:Name="TextBlock_Organizations" Foreground="White" Text="Редактировать названия организаций, показателей, критериев" Grid.Row="3" Grid.Column="0" TextWrapping="Wrap" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10,16,10,15" FontSize="14"/>
+        <Button x:Name="ToChangesPage" IsEnabled="False" MaxHeight="30" Content="Редактировать..." Grid.Row ="3" Grid.Column="1" Margin="25,12,1,12" Click="Button_Click" FontSize="14"/>
+
+        <StackPanel Grid.Row="4" Grid.ColumnSpan = "3" Orientation="Vertical" VerticalAlignment="Center" Margin="0,59" Height="0"/>
+
+        <Button x:Name="ToExcelCollection" Content="Выгрузить" MaxHeight="45" Grid.Row="4" Grid.ColumnSpan="3" Margin="50, 10, 50, 10"  Click="Button_Click" FontSize="14"/>
+
+    </Grid>
+</UserControl>
