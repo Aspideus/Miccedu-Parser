@@ -9,6 +9,7 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
 using HtmlAgilityPack;
+using System.Collections.Generic;
 
 namespace miccedux
 {
@@ -99,11 +100,20 @@ namespace miccedux
                 }
                 else if (widget_name == Combo_Years_Name)
                 {
+                    int max_year = 2018;
                     foreach (HtmlNode hn in hnc)
                     {
                         current_url = hn.Attributes["href"].Value;
-                        tmp_sclass2.Add(hn.SelectSingleNode("b")?.InnerText.Trim() ?? current_url, current_url ?? throw new Exception("url cannot be empty"));
+                        int year = int.Parse(Regex.Replace(hn.SelectSingleNode("b")?.InnerText.Trim(), "[^0-9]+", ""));
+
+                        if (year > 2015)
+                            tmp_sclass2.Add(year.ToString() ?? current_url, current_url ?? throw new Exception("url cannot be empty"));
+
+                        if (year > max_year)
+                            max_year = year;
                     }
+
+                    tmp_sclass2.Add((++max_year).ToString() ?? current_url, url ?? throw new Exception("url cannot be empty"));
                 }
                 else if (widget_name == Combo_Regions_Name)
                 {

@@ -1,0 +1,24 @@
+C:\Users\Maks\Desktop\Miccedu\Miccedu-Parser\Miccedu Parser\bin\Release\Miccedu Parser.exe.config
+C:\Users\Maks\Desktop\Miccedu\Miccedu-Parser\Miccedu Parser\bin\Release\Miccedu Parser.exe
+C:\Users\Maks\Desktop\Miccedu\Miccedu-Parser\Miccedu Parser\bin\Release\Miccedu Parser.pdb
+C:\Users\Maks\Desktop\Miccedu\Miccedu-Parser\Miccedu Parser\obj\Release\miccedux.csprojAssemblyReference.cache
+C:\Users\Maks\Desktop\Miccedu\Miccedu-Parser\Miccedu Parser\obj\Release\Themes\Brushes.baml
+C:\Users\Maks\Desktop\Miccedu\Miccedu-Parser\Miccedu Parser\obj\Release\Themes\Core.baml
+C:\Users\Maks\Desktop\Miccedu\Miccedu-Parser\Miccedu Parser\obj\Release\UserControls\ExcelCollection.g.cs
+C:\Users\Maks\Desktop\Miccedu\Miccedu-Parser\Miccedu Parser\obj\Release\UserControls\MainPage.g.cs
+C:\Users\Maks\Desktop\Miccedu\Miccedu-Parser\Miccedu Parser\obj\Release\MainWindow.g.cs
+C:\Users\Maks\Desktop\Miccedu\Miccedu-Parser\Miccedu Parser\obj\Release\UserControls\ChangesPage.g.cs
+C:\Users\Maks\Desktop\Miccedu\Miccedu-Parser\Miccedu Parser\obj\Release\App.g.cs
+C:\Users\Maks\Desktop\Miccedu\Miccedu-Parser\Miccedu Parser\obj\Release\Miccedu Parser_MarkupCompile.cache
+C:\Users\Maks\Desktop\Miccedu\Miccedu-Parser\Miccedu Parser\obj\Release\Miccedu Parser_MarkupCompile.lref
+C:\Users\Maks\Desktop\Miccedu\Miccedu-Parser\Miccedu Parser\obj\Release\App.baml
+C:\Users\Maks\Desktop\Miccedu\Miccedu-Parser\Miccedu Parser\obj\Release\UserControls\ExcelCollection.baml
+C:\Users\Maks\Desktop\Miccedu\Miccedu-Parser\Miccedu Parser\obj\Release\UserControls\MainPage.baml
+C:\Users\Maks\Desktop\Miccedu\Miccedu-Parser\Miccedu Parser\obj\Release\MainWindow.baml
+C:\Users\Maks\Desktop\Miccedu\Miccedu-Parser\Miccedu Parser\obj\Release\UserControls\ChangesPage.baml
+C:\Users\Maks\Desktop\Miccedu\Miccedu-Parser\Miccedu Parser\obj\Release\Miccedu Parser.g.resources
+C:\Users\Maks\Desktop\Miccedu\Miccedu-Parser\Miccedu Parser\obj\Release\miccedux.Properties.GElements.resources
+C:\Users\Maks\Desktop\Miccedu\Miccedu-Parser\Miccedu Parser\obj\Release\miccedux.Properties.Resources.resources
+C:\Users\Maks\Desktop\Miccedu\Miccedu-Parser\Miccedu Parser\obj\Release\miccedux.csproj.GenerateResource.cache
+C:\Users\Maks\Desktop\Miccedu\Miccedu-Parser\Miccedu Parser\obj\Release\Miccedu Parser.exe
+C:\Users\Maks\Desktop\Miccedu\Miccedu-Parser\Miccedu Parser\obj\Release\Miccedu Parser.pdb

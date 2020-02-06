@@ -103,6 +103,8 @@ namespace miccedux
         {
             Cells.Add(new SClass2_1(title, url));
             height = Cells.Count * 26.09;
+
+            Cells.Sort((a, b) => { int i1, i2 = -1; int.TryParse(a.title, out i1); int.TryParse(b.title, out i2); return i2.CompareTo(i1); });
         }
 
         public string[] GetArrayUrls()

@@ -4,15 +4,15 @@
 winexe
 C#
 .cs
-C:\Users\Maks\Desktop\Miccedu\Miccedu-Parser\Miccedu Parser\obj\Debug\
+C:\Users\Maks\Desktop\Miccedu\Miccedu-Parser\Miccedu Parser\obj\Release\
 miccedux
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Users\Maks\Desktop\Miccedu\Miccedu-Parser\Miccedu Parser\App.xaml
 6-625914678
 
-52-1917735056
+53-696876628
 161077724033
 Themes\Brushes.xaml;Themes\Core.xaml;UserControls\ExcelCollection.xaml;UserControls\MainPage.xaml;MainWindow.xaml;UserControls\ChangesPage.xaml;
 
